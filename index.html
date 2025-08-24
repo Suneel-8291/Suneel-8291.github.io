@@ -2,57 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Suneel's Interactive Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasco's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Suneel</h1>
-        <p>Software Developer | Portfolio</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Vasco</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Vasco</h1>
+            <p>Aspiring AI/ML & Gen AI Engineer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Passionate developer with experience in web technologies.<br>
-            <button onclick="showMoreAbout()">Show More</button></p>
-            <div id="moreAbout" style="display:none;">
-                <p>I love building interactive and responsive web applications. Connect with me below!</p>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card" onmouseover="highlightCard(this)" onmouseout="unhighlightCard(this)">
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate AI/ML enthusiast, specializing in generative AI solutions and full-stack AI applications.
+            I enjoy building projects that solve real-world problems using cutting-edge technology.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
                 <h3>Project 1</h3>
-                <img src="https://via.placeholder.com/150" alt="Project 1">
-                <p>Short description of Project 1.</p>
-                <a href="#" class="btn">View Details</a>
+                <p>Brief description of your project goes here.</p>
+                <a href="#" class="btn-small">View on GitHub</a>
             </div>
-            <div class="project-card" onmouseover="highlightCard(this)" onmouseout="unhighlightCard(this)">
+            <div class="project-card">
                 <h3>Project 2</h3>
-                <img src="https://via.placeholder.com/150" alt="Project 2">
-                <p>Short description of Project 2.</p>
-                <a href="#" class="btn">View Details</a>
+                <p>Brief description of your project goes here.</p>
+                <a href="#" class="btn-small">View on GitHub</a>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contactForm" onsubmit="submitForm(event)">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
-            <div id="formResponse" style="display:none;">Thank you for your message!</div>
-        </section>
-    </main>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Brief description of your project goes here.</p>
+                <a href="#" class="btn-small">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Suneel</p>
+        <p>&copy; 2025 Vasco. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
