@@ -28,10 +28,11 @@
   <!-- Hero Section -->
   <header id="hero">
     <div class="hero-content">
-      <h1>Hello, I'm Vasco</h1>
+      <h1 class="glow-text">Hello, I'm Vasco</h1>
       <p>Aspiring AI/ML & Generative AI Engineer</p>
-      <a href="#projects" class="btn">Explore My Work</a>
+      <a href="#projects" class="btn neon-btn">🚀 Explore My Work</a>
     </div>
+    <div id="particles-js"></div> <!-- futuristic background -->
   </header>
 
   <!-- About Section -->
@@ -55,20 +56,20 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
-      <div class="project-card">
+      <div class="project-card glow-card">
         <h3>AI Chatbot</h3>
         <p>A smart AI chatbot built using NLP and generative models.</p>
-        <a href="https://github.com/vasco/ai-chatbot" target="_blank" class="btn-small">View on GitHub</a>
+        <a href="https://github.com/vasco/ai-chatbot" target="_blank" class="btn-small neon-btn">View on GitHub</a>
       </div>
-      <div class="project-card">
+      <div class="project-card glow-card">
         <h3>ML Image Classifier</h3>
         <p>Classifies images using convolutional neural networks with high accuracy.</p>
-        <a href="https://github.com/vasco/ml-image-classifier" target="_blank" class="btn-small">View on GitHub</a>
+        <a href="https://github.com/vasco/ml-image-classifier" target="_blank" class="btn-small neon-btn">View on GitHub</a>
       </div>
-      <div class="project-card">
+      <div class="project-card glow-card">
         <h3>Generative Art AI</h3>
         <p>Creates digital art using generative adversarial networks (GANs).</p>
-        <a href="https://github.com/vasco/gen-art-ai" target="_blank" class="btn-small">View on GitHub</a>
+        <a href="https://github.com/vasco/gen-art-ai" target="_blank" class="btn-small neon-btn">View on GitHub</a>
       </div>
     </div>
   </section>
@@ -80,16 +81,27 @@
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+      <button type="submit" class="btn neon-btn">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Vasco. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="https://github.com/vasco" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vasco" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    /* Particles.js background */
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js config loaded');
+    });
+  </script>
 </body>
 </html>
 
